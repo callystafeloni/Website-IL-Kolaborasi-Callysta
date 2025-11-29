@@ -1,0 +1,161 @@
+h2 {
+  text-align: center;
+  color: #ff69b4;
+  margin-bottom: 20px;
+}
+
+.cute-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffeefe;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cute-table td {
+  border: 2px solid #ffbde5;
+  padding: 12px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.cute-table tr:nth-child(even) {
+  background: #fff3fb;
+}
+
+.cute-table tr:hover {
+  background: #ffdff4;
+  transition: 0.2s;
+}
+body {
+   background-image: url("Bow\ wallpaper\ coquette\ pink\ and\ white.jpg");
+
+}
+.footer {
+    width: 1280px;
+    position: sticky;
+    margin: 270px 0px;
+    
+}
+.header {
+    width: 1280;
+    position: static;
+    object-fit: cover;   
+}    
+.home {
+    color: black;
+    font-family: "ab";
+    background: #fff;
+    padding: 50px;          
+    width: 100%;          
+    height: calc(100vh - 120px); 
+    max-width: none;       
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    max-height: 200px;
+
+    
+}
+ul {
+    list-style: none;
+    background: #22438C;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    position:static;
+    width: 1280px;
+    height:120;
+    align-items: center;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    padding: 0px 0px;
+     margin-right: 70px;
+}
+
+ul li a {
+    padding: 0px 0px;
+    text-align: center;
+        display: flex;
+
+}
+
+ul a:hover {
+    background-color: palegoldenrod;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    background: #22438C;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    margin: 0px 0px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+h2{
+    font-family: "ab";
+     clear: both;
+      display: block;
+        margin-bottom: 30px;
+
+
+}
+@font-face{
+    font-family: "ab";
+    src:url(start_story/Start\ Story.otf);
+}
+.frame {
+  width: 200px;        
+  padding: 10px;
+  background: #ffc7e3;   
+  border-radius: 12px;
+  overflow: hidden;
+  transition: .3s;
+    margin: 0 auto;   
+
+}
+
+.frame img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: .3s;
+ 
+}
+
+.frame:hover {
+  transform: scale(1.05);
+}
+
+.frame:hover img {
+  transform: scale(1.08);
+}
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px; 
+}
+
+footer img {
+    width: 1280px; 
+    display: block;
+    margin: 0 auto;
+}
+

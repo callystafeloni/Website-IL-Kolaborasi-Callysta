@@ -1,0 +1,441 @@
+.header {
+    width: 1280;
+    position: static;
+    object-fit: cover;  
+}    
+
+h2{
+    font-family: "cd";
+     clear: both;
+      display: block;
+        margin-bottom: 30px;
+
+
+}
+h1{
+    font-family: "ab";
+     clear: both;
+      display: block;
+      text-shadow: 3px #22438C;
+
+
+}
+
+@font-face{
+    font-family: "cd";
+    src:url(gaseno_rounded/Gaseno-Normal.ttf);
+}
+p {
+    font-family: "ab";
+
+}
+@font-face{
+    font-family: "ab";
+    src:url(start_story/Start\ Story.otf);
+}
+           
+.home {
+    color: black;
+    font-family: "ab";
+    background: #fff;
+    padding: 50px;          /* lebih besar agar terasa full-page */
+    width: 100%;            /* biar full lebar */
+    height: calc(100vh - 120px); /* tinggi viewport dikurangi navbar */
+    max-width: none;        /* hilangkan max-width 700px */
+    display: flex;
+    justify-content: center;
+    align-items: center;    /* vertical center */
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    max-height: 200px;
+
+    
+}
+.fill{
+    color: black; 
+    font-family: "ab"; 
+    background: #fff; /* warna kotak */
+     padding: 15px 20px; /* ruang dalam */ 
+     border-radius: 12px; /* sudut melengkung */ 
+     border: 2px solid #ccc; /* garis kotak */ 
+     width: fit-content; /* lebarnya mengikuti isi */
+      max-width: 700px; /* biar tidak terlalu panjang */ 
+      font-size: 16px; line-height: 1.5; 
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* opsional: shadow */
+       display: flex; justify-content: center; 
+       flex-direction: column; 
+       align-items: center; 
+       font-family: "ab";
+
+     
+}
+
+@font-face{
+    font-family: "ab";
+    src:url(start_story/Start\ Story.otf);
+}
+
+ul {
+    list-style: none;
+    background: #22438C;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    position:static;
+    width: 1280px;
+    height:120;
+    align-items: center;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    padding: 0px 0px;
+     margin-right: 70px;
+}
+
+ul li a {
+    padding: 0px 0px;
+    text-align: center;
+        display: flex;
+
+}
+
+ul a:hover {
+    background-color: #FDFD96;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    background: #22438C;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    margin: 0px 0px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+.column {
+    float: left;
+    padding: 0px 10px;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px; 
+}
+
+footer img {
+    width: 1280px; 
+    display: block;
+    margin: 0 auto;
+}
+
+body {
+    background: linear-gradient(to right,
+        #ffe0f0,   
+        #f7c8dc 20%,
+        #f7c8dc 80%,
+        #ffe0f0   
+    );
+}
+.image-box {
+    background: #fff;            
+    border: 2px solid #ccc;       
+    border-radius: 12px;          
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+    padding: 15px;               
+    width: 600px;           
+    text-align: center;          
+    margin: 20px auto;           
+        justify-content: space-between; 
+
+}
+
+.image-box img {
+    max-width: 100%;             
+    height: auto;
+    border-radius: 8px;          
+    display: block;
+    margin-bottom: 10px;          
+        transition: transform 0.3s ease; 
+
+}
+.image-box img:hover {
+    transform: scale(1.2);      
+}
+
+.image-box p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+.cut-box {
+    background: #ad403e;
+    padding: 20px;
+    width: 1100px;;
+    margin: 20px auto;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%);
+    color: whitesmoke;
+    font-weight: bold;
+}
+.card{
+    background: #FDFD96;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.card h3{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.card p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+@font-face{
+    font-family: "ab";
+    src: url("Gaseno-Normal.otf");
+}
+
+body{
+    font-family: "ab", sans-serif;
+    background: #f7d2e1;
+    margin: 0;
+    padding: 30px;
+}
+
+.judul-baru{
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 45px;
+    color: #2b1d3a;
+}
+
+.box-baru{
+    position: relative;
+    background: linear-gradient(135deg, #ffffff, #faf7ff);
+    padding: 28px 34px;
+    border-radius: 28px;
+    width: 80%;
+    margin: 35px auto;
+    border: 2px solid #e7ddff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.box-baru::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 9px;
+    height: calc(100% - 36px);
+    background: linear-gradient(180deg, #7b63ff, #c39bff);
+    border-radius: 50px;
+}
+
+.box-baru:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.22);
+}
+
+.box-title-baru{
+    font-size: 27px;
+    margin-bottom: 12px;
+    color: #2e214b;
+}
+
+.box-text-baru{
+    font-size: 20px;
+    color: #3e2f5a;
+    line-height: 1.7;
+}
+.peran-pendukung {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;     
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card-peran {
+    background: #ffffff;
+    border-left: 6px solid #7b4bff;
+    padding: 20px 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transition: 0.25s ease;
+
+    flex: 0 0 23%;   
+    box-sizing: border-box;
+}
+
+.card-peran:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.card-peran h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: #3a1d6f;
+}
+
+.card-peran p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.55;
+}
+.peran-pendukung {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;     
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card-peran {
+    background: #ffffff;
+    border-left: 6px solid #7b4bff;
+    padding: 20px 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transition: 0.25s ease;
+
+    flex: 0 0 23%;  
+    box-sizing: border-box;
+}
+
+.card-peran:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.card-peran h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: #3a1d6f;
+}
+
+.card-peran p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.55;
+}
+
+.pancasila {
+    width: 1100px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 16px;
+    border: 2px solid #d6d6f8;
+
+   
+    box-shadow: 0 10px 25px rgba(120, 120, 200, 0.18);
+    position: relative;
+}
+
+
+.pancasila .ribbon {
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    background: linear-gradient(90deg, #7d8cff, #aab6ff);
+    color: white;
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(100, 110, 200, 0.35);
+}
+
+.pancasila p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+
+}
+.target-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.target-box {
+    flex: 1;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* Warna-warninya */
+.box1 { background: #ff6b6b; }
+.box2 { background: #f7b731; }
+.box3 { background: #20bf6b; }
+.box4 { background: #45aaf2; }
+.box5 { background: #a55eea; }
+
+.target-box:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.arrows {
+    text-align: center;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    margin: 10px auto; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 25px solid hotpink; 
+    animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+

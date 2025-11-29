@@ -1,0 +1,208 @@
+body {
+    background-image: url("webtik.jpg");
+
+}
+.footer {
+    width: 1280px;
+    position: sticky;
+    margin: 270px 0px;
+    
+}
+.header {
+    width: 1280;
+    position: static;
+    object-fit: cover;   /* FIT GAMBAR */
+}    
+.home {
+    color: black;
+    font-family: "ab";
+    background: #fff;
+    padding: 50px;          /* lebih besar agar terasa full-page */
+    width: 100%;            /* biar full lebar */
+    height: calc(100vh - 120px); /* tinggi viewport dikurangi navbar */
+    max-width: none;        /* hilangkan max-width 700px */
+    display: flex;
+    justify-content: center;
+    align-items: center;    /* vertical center */
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    max-height: 200px;
+
+    
+}
+ul {
+    list-style: none;
+    background: #22438C;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    position:static;
+    width: 1280px;
+    height:120;
+    align-items: center;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    padding: 0px 0px;
+     margin-right: 70px;
+}
+
+ul li a {
+    padding: 0px 0px;
+    text-align: center;
+        display: flex;
+
+}
+
+ul a:hover {
+    background-color: palegoldenrod;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    background: #22438C;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    margin: 0px 0px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+h2{
+    font-family: "ab";
+     clear: both;
+      display: block;
+        margin-bottom: 30px;
+
+
+}
+h1{
+    font-family: "ab";
+     clear: both;
+      display: block;
+      text-shadow: 3px #22438C;
+}
+.bilateral-panel{
+    width: 85%;
+    margin: 25px auto;
+    padding: 25px 28px;
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1.5px solid #e6e6f3;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    position: relative;
+    overflow: hidden;
+    transition: 0.25s ease-in-out;
+}
+
+/* aksen garis kiri */
+.bilateral-panel::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7px;
+    height: 100%;
+    background: linear-gradient(180deg, #8c6bff, #c1b6ff);
+    border-radius: 0 6px 6px 0;
+}
+
+/* accent bubble */
+.bilateral-panel::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 110px;
+    height: 110px;
+    background: rgba(159, 109, 255, 0.15);
+    border-radius: 50%;
+    filter: blur(6px);
+}
+
+/* hover efek naik */
+.bilateral-panel:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+/* judul */
+.bilateral-panel h3{
+    margin: 0 0 12px;
+    font-size: 23px;
+    color: #3a2d72;
+    font-weight: 700;
+}
+
+/* isi paragraf */
+.bilateral-panel p{
+    margin: 0;
+    font-size: 16.5px;
+    line-height: 1.65;
+    color: #4b4b63;
+}
+
+@font-face{
+    font-family: "ab";
+    src:url(start_story/Start\ Story.otf);
+}
+
+.slider {
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: 10s ease;
+}
+
+.slides img {
+  width: 800px;
+  object-fit: cover;
+}
+
+input { display: none; }
+
+/* Posisi slide */
+#slide1:checked ~ .slides { transform: translateX(0); }
+#slide2:checked ~ .slides { transform: translateX(-100%); }
+#slide3:checked ~ .slides { transform: translateX(-200%); }
+
+/* Tombol */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 12px;
+  background: #ff99c3;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* posisi */
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Hilangkan arrow yang tidak seharusnya muncul */
+#slide1:checked ~ .prev { display: none; }   /* ga bisa ke kiri dari slide 1 */
+#slide3:checked ~ .next { display: none; }   /* ga bisa ke kanan dari slide 3 */
